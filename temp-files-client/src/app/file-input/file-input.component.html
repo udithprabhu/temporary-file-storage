@@ -1,0 +1,46 @@
+<!-- <form id="file-form" action="" method="post" enctype="multipart/form-data">
+    Upload a File:
+    <input type="file" id="myfile" name="myfile">
+    <input type="button" id="submit" name="submit" (click)="uploadFile();" value="Upload File Now" >
+</form> -->
+
+<div class="container-fluid upload-container">
+    <div class="row">
+        <div class="upload-picker-container col-lg-5 col-md-7 col-sm-8 col-xs-10 offset-lg-3 offset-md-2 offset-sm-2 offset-xs-1">
+            <div class="custom-file mb-3">
+                <input type="file" class="custom-file-input" id="myfile" name="myfile" (change)="uploadFileChange();">
+                <label class="custom-file-label" id="upload-file-label" for="myfile">Choose file</label>
+            </div>
+        </div>
+        <div class = "upload-button-container col-lg-1 col-md-1 col-sm-2 col-xs-4 offset-lg-0 offset-md-0 offset-sm-5 offset-xs-4">
+            <button type="button" class="upload-button" (click)="uploadFile();">
+                Upload
+            </button>
+        </div>
+    </div>
+    <div *ngIf = "state == 'loading'" class="row">
+        <div class="col-lg-6 offset-lg-3 progress-line-container">
+            <div class="progress-line"></div>
+            <div class="upload-status">
+                Processing Upload
+            </div>
+        </div>      
+    </div>
+    <div *ngIf = "state == 'loaded'" class="row">
+        <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2 col-sm-10 offset-sm-1 col-xs-10 offset-xs-1 progress-line-done-container">
+            <div class="progress-line-done"></div>
+            <div class="upload-status">
+                    Upload Successful!
+            </div>
+        </div>
+        
+        <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2 col-sm-10 offset-sm-1 col-xs-12 download-link-container">
+            <app-file-download-home [fileDownloadLink]="fileDownloadLink"></app-file-download-home>
+        </div>  
+    </div>
+    <div *ngIf="state == 'error'" class="row">
+        <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2 col-sm-10 offset-sm-1 col-xs-10 offset-xs-1">
+            <app-upload-error-msg  [message]="errorMsg"></app-upload-error-msg>
+        </div>
+    </div>
+</div>

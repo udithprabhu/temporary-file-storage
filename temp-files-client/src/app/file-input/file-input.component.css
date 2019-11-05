@@ -1,0 +1,115 @@
+.upload-container {
+    margin-top: 50px;
+    outline: none;
+}
+
+.upload-button {
+    background-color: blueviolet;
+    color: white;
+    border: 0px solid black;
+    border-radius: 25px;
+    height: calc(1.5em + .75rem + 2px);
+    padding-left: 30px;
+    padding-right: 30px;
+    outline: none !important;
+}
+
+.custom-file-label {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+
+@media (max-width: 767px) {
+    .upload-button-container {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 575.98px) { 
+    .upload-button-container {
+        text-align: center;
+    }
+    
+    .upload-button {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
+.progress-line-container {
+    margin-top: 30px;
+    height: 20px;
+    display: inline-block;
+    text-align: center;
+}
+
+.progress-line, .progress-line:before {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    border-radius: 20px;
+  }
+  .progress-line {
+    background-color: #b3d4fc;
+    display: -webkit-flex;
+    display: flex;
+    border-radius: 20px;
+  }
+  .progress-line:before {
+    border-radius: 20px;
+    background-color: #3f51b5;
+    content: '';
+    -webkit-animation: running-progress 2s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+    animation: running-progress 2s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+  }
+  @-webkit-keyframes running-progress {
+    0% { margin-left: 0px; margin-right: 100%; }
+    50% { margin-left: 25%; margin-right: 0%; }
+    100% { margin-left: 100%; margin-right: 0; }
+  }
+  @keyframes running-progress {
+    0% { margin-left: 0px; margin-right: 100%; }
+    50% { margin-left: 25%; margin-right: 0%; }
+    100% { margin-left: 100%; margin-right: 0; }
+  }
+
+
+  .progress-line-done, .progress-line-done:before {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    border-radius: 20px;
+  }
+  .progress-line-done {
+    background-color: #b3d4fc;
+    display: -webkit-flex;
+    display: flex;
+    border-radius: 20px;
+  }
+
+  .progress-line-done:before {
+    border-radius: 20px;
+    background-color: #3f51b5;
+    content: '';
+  }
+
+.progress-line-done-container {
+    margin-top: 30px;
+    height: 20px;
+    text-align: center;
+}
+
+.upload-status {
+    font-size: 150%;
+    font-weight: 500;
+    font-family: monospace;
+    align-self: center;
+    margin-top: 15px;
+}
+
+.download-link-container {
+    position: absolute;
+    margin-top: 150px;
+}

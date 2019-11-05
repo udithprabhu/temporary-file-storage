@@ -1,0 +1,24 @@
+
+<div class="container download-link-container">
+    <div class="header-text-container">
+        Please use this link to download the file
+    </div>
+    <div class="row link-container">
+        <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
+            <input id="link-input" type="text" class="download-link" value="{{fileDownloadLink}}" (window:resize)="onLinkElementChange($event);" readonly />
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 offset-xs-5 text-center">
+            <button class="clipboard-icon-container" (click)="clickClipboardIcon();">
+                <fa name="copy"></fa>
+            </button>
+        </div>
+    </div>
+    <div class="header-text-container qr-msg-container">
+            Or Scan the QR Code
+    </div>
+    <div class="qr-code-container">
+        <ngx-qrcode qrc-element-type="url" [qrc-value]="fileDownloadLink" qrc-class = "aclass" qrc-errorCorrectionLevel = "L"></ngx-qrcode>
+    </div>
+
+</div>
+

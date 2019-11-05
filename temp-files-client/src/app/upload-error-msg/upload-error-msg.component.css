@@ -1,0 +1,16 @@
+.error-icon-container {
+    margin-top: 25px;
+    font-size: 400%;
+    background-color: transparent;
+    color: red;
+}
+
+.error-msg-container {
+    margin-top: 25px;
+    font-size: 150%;
+    font-family: monospace;
+}
+
+.error-container {
+    text-align: center;
+}

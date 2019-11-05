@@ -1,0 +1,55 @@
+/* .download-link-container {
+    background-color: lightblue;
+} */
+
+.header-text-container {
+    text-align: center;
+}
+
+.clipboard-icon-containe {
+    text-align: center;
+}
+
+.download-link {
+    width: 100%;
+    border: 0; 
+    padding-top:5px;
+    padding-bottom: 5px;
+    padding-left: 2px;
+    padding-right: 22-px;
+    border-bottom: 1px solid black;
+    text-align: center;
+}
+
+.link-container {
+    margin-top: 15px;
+    font-size: 25px;
+}
+
+.clipboard-icon-container {
+    border: 1px solid black;
+    border-radius: 25px;
+    background-color: black;
+    color: white;
+    outline: none;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#link-input {
+    outline: none;
+}
+
+@media (max-width: 575.98px) {
+    .clipboard-icon-container {
+        margin-top: 20px;
+    }
+}
+
+.qr-msg-container {
+    margin-top: 25px;
+}
+
+.qr-code-container {
+    text-align: center;
+}
