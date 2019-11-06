@@ -12,4 +12,8 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
   }
 
+  redirectToGithubPage() {
+    window.location.href = "https://github.com/udithprabhu/temporary-file-storage";
+  }
+
 }
