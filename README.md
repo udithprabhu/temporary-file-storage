@@ -21,15 +21,24 @@ Please note that there is absolutely **no encryption** done. Thus, please only u
 ### Development
 
 Want to contribute? Awesome!
+
  * Fork the repo
+
  * Create a feature branch
+
  * Do your magic on the code
+
  * Raise PR
 
 ### Todos
 
  - Encryption
+
  - Terms and Conditions page
+
  - Check the upload timings to see whether a higher size limit can be set.
+
+&nbsp;
+&nbsp;
 
 **"Open source is a development methodology; free software is a social movement." ~ Richard Stallman**
